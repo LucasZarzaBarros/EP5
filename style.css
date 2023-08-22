@@ -1,0 +1,1057 @@
+/*Link da fonte da letra*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*Aqui contem a fonte da letra e outras formatações da pagina*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Colocamos o grid na loja principal */
+body {
+    display: grid;
+    grid-template-areas:
+        "cabe cabe cabe"
+        "ombr corp corp"
+        "fund fund fund";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 170px auto auto;
+    grid-gap: 2rem;
+
+}
+
+/*Usamos o nome cabeca para chamar o grid no header e deixamos ela como a posiçao de referencia */
+.cabeca {
+    grid-area: cabe;
+    background-color: #504d4d;
+    position: relative;
+    height: 100%;
+}
+
+/*Usamos o nome ombro para chamar o grid no aside*/
+.ombro {
+    grid-area: ombr;
+    background-color: rgba(232, 255, 232, 0.301);
+}
+
+/*Usamos o nome corpo para chamar o grid no main*/
+.corpo {
+    grid-area: corp;
+}
+
+/*Usamos o nome fundo para chamar o grid no footer e coloquei uma padding para dar uma distancia do topo e do lado */
+.fundo {
+    grid-area: fund;
+    background-color: #504d4d;
+    color: aliceblue;
+    padding: 20px 20px;
+    width: auto;
+    height: auto;
+}
+
+/*Aqui e aonde vai o menu, coloquei uma cor e deixei ele sem aparecer no site principal */
+.loja2 {
+    display: none;
+    grid-area: loj2;
+    background-color: #504d4d;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Aqui e o grid do Formulario*/
+
+/*Colocamos o grid do formulario */
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "prim prim prim"
+        "segu segu segu"
+        "terc terc terc";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 1000px auto;
+    grid-gap: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Usamos o nome primeiro para chamar o grid no header e colocamos  uma imagem de fundo*/
+.primeiro {
+    grid-area: prim;
+    background-color: #504d4d;
+    width: 100%;
+    height: 100%;
+}
+
+/*Usamos o nome segundo para chamar o grid no main*/
+.segundo {
+    grid-area: segu;
+}
+
+/*Usei o nome terceiro para chamar o grid no footer ecoloquei uma distancia do topo e do lado com uma altura de 100% e  uma largura de 100% */
+.terceiro {
+    grid-area: terc;
+    background-color: #504d4d;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    padding: 20px 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Aqui e o grid do site produto*/
+
+/*Chamei para colocar o grid no produto*/
+.produto {
+    display: grid;
+    grid-template-areas:
+        "pro1 pro1 pro1"
+        "pro2 pro3 pro3"
+        "pro4 pro4 pro4";
+    grid-template-columns: 350 auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+}
+
+/*Usamos o nome .produto-1 para chamar o grid no header*/
+.produto-1 {
+    grid-area: pro1;
+    background-color: #504d4d;
+    position: relative;
+}
+
+/*Usamos o nome produto-2 para chamar o grid no aside*/
+.produto-2 {
+    grid-area: pro2;
+}
+
+/*Usamos o nome produto-3 para chamar o grid no main*/
+.produto3 {
+    grid-area: pro3;
+}
+
+/*Usamos o nome produto-4 para chamar o grid no footer e coloquei uma distancia do topo */
+.produto-4 {
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    grid-area: pro4;
+    background-color: #504d4d;
+    color: aliceblue;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Aqui e o grid do site Carrinho*/
+
+.carro {
+    display: grid;
+    grid-template-areas:
+        "car1 car1 car1"
+        "car2 car3 car3"
+        "car4 car4 car4";
+    grid-template-columns: 550px auto auto;
+    grid-template-rows: auto 450px auto;
+    grid-gap: 2rem;
+}
+
+/*Usei o nome carro1 para chamar o grid no header colocando uma cor de fundo*/
+.carro1 {
+    grid-area: car1;
+    background-color: #504d4d;
+}
+
+/*Usei o nome carro2 para chamar o grid no aside*/
+.carro2 {
+    grid-area: car2;
+}
+
+/*Usei o nome carro3 para chamar o grid no main*/
+.carro3 {
+    grid-area: car3;
+}
+
+/*Usei o nome carro4 para chamar o grid no footer colocando uma cor de fundo e uma distancia da borda*/
+.carro4 {
+    grid-area: car4;
+    background-color: #504d4d;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    margin-top: 130px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Aqui e a formatação do menuzinho*/
+
+/*Coloquei uma altura uma posição e uma direção para o elemento*/
+.nav_mobile ul {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+/*Coloquei uma altura para o elemento*/
+.nav_mobile img {
+    width: 40px;
+}
+
+/*Coloquei para que o elemento não apareça no site*/
+.nav_mobile input[type="checkbox"] {
+    display: none;
+}
+
+/*Coloquei uma altura e largura junto com uma transição*/
+.nav_mobile nav {
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -350px;
+    transition: all 0.3s;
+}
+
+/*Coloquei o elemento como um bloco tirei o sublinhado da palavra e dando uma distancia dos outros elementos*/
+.nav_mobile a {
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+}
+
+/*Coloquei ele como uma posição absoluta*/
+.nav_mobile label {
+    position: absolute;
+    z-index: 1;
+}
+
+/*Coloquei para ele vim e ir 350 px*/
+.nav_mobile input[type="checkbox"]:checked~nav {
+    transform: translateX(350px);
+}
+
+/*Coloquei uma transição e uma cor de palavra*/
+.menu li a {
+    color: #ffffff;
+    transition: all .3s ease;
+}
+
+/*coloquei uma cor de palavra e  coloquei o elemento mais para a esquerda*/
+.menu li a:hover {
+    color: #9900ff;
+    padding-left: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação no header da Loja Principal*/
+
+/*Aqui eu dei o nome de volta para o cadastro coloquei ele em um posicionamento com uma cor laranja, com uma transição de 2s e um tamanho de letra grande */
+.volta {
+    position: absolute;
+    top: 125px;
+    right: 246px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 19px;
+    margin-top: 0;
+    color: #ffffff;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação do Footer da Loja Principal*/
+
+/*Coloquei uma margem da borda nos elementos do footer e deixei eles organizados em 4 colunas*/
+#footer_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 4.5rem;
+}
+
+/*Dou uma distancia do fundo o h1*/
+#titulo_fundo h1 {
+    margin-bottom: 0.70rem;
+}
+
+/*Aqui eu coloco uma distancia entre as redes sociis e coloco elas um pouco para cima*/
+#rede_social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/*Aqui eu coloco uma distancia entre as informações e deixo elas em colunas*/
+.lista_fundo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+/*Aqui eu tiro o sublinado que fica embaixo do link*/
+.lista_fundo a {
+    text-decoration: none;
+}
+
+/*Coloco uma cor nas informaçoes do footer e adiciono uma transição*/
+.lista_fundo .fundinho {
+    color: aliceblue;
+    transition: all 0.4s;
+}
+
+/*Aqui e a transição e coloco outrea cor nas palavras*/
+.lista_fundo .fundinho:hover {
+    color: #b468ff;
+}
+
+/*Aqui e o copyright coloquei ele no centro com uma distancia dos outros elementos e um tamanho de palavra de 12px*/
+#copy {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    font-size: 12px;
+}
+
+/*Coloquei uma rede mais para cima */
+.bbbb {
+    margin-top: 2px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação da loja Principal*/
+
+/*Aqui fica todos os cards coloquei eles no centro deixando eles responsivos*/
+.pai {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Aqui e o card coloque um tamanho especifico coloquei que os itens dentro ficassem em colunas e ficasem no centro */
+.card {
+    padding: 15px;
+    border: solid 1px black;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgb(129, 129, 129);
+    width: 225px;
+    height: 380px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/*Coloquei uma distancia dos outrtos elementos e aumentei o tamanho da palavra*/
+.card p {
+    font-size: 13px;
+    margin: 10px;
+}
+
+/*Coloquei um tamanho de palavra especifico e dei um espaçamento dos outros elementos*/
+.card span {
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/*Coloquei o botao no centro com uma distancia dos outros elementos junto com uma cor arredondando sua borda e tirando o sublinado que fica quando e um link */
+.saiba {
+    display: block;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 12px;
+}
+
+/*coloquei uma cor de fundo na transição e mudei a cor das palavras*/
+.saiba:hover {
+    letter-spacing: 0.9px;
+}
+
+/*Coloquei as palavras no centro dando uma largura especifica para as letras e coloquei um espaçamento dos outros elementos*/
+.categoria1 {
+    text-align: center;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin: 55px;
+}
+
+/*Coloquei um espaçamento dos outros elementos*/
+.espaco {
+    margin: 15px;
+}
+
+/*Coloquei um espaçamento dos outros elementos*/
+.espaco2 {
+    margin: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação Do Site Produto*/
+
+/*Coloquei uma altura e um espaçamento dos outros elementos*/
+.produtao img {
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 23px;
+}
+
+/*Coloquei as informaçoes em colunas e colocando elas um pouco para cima*/
+.info_lado {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 25px;
+}
+
+/*Coloquei as informaçoes um pouco para cima*/
+.informacoes_preco {
+    margin-top: 5px;
+}
+
+/*Coloqeui um espaçamento dos outros elementos*/
+.informacoes_preco p {
+    margin: 5px;
+}
+
+/*Coloquei um tamanho de letra maior*/
+.info_lado p {
+    font-size: 15px;
+}
+
+/*Coloquei um tamanho de letra maior*/
+.valor {
+    font-size: 30px;
+}
+
+/*Coloquei as informaçoes em linhas*/
+.pai_bola {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Coloquei um tamanho de letra maior*/
+.tamanho {
+    margin-top: 25px;
+}
+
+/*Aqui eu fiz as bolinhas do tamanho da camisa*/
+.bola {
+    display: block;
+    width: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 120px;
+    position: relative;
+    margin: 3px;
+    transition: 0.5ms;
+    top: 45px;
+}
+
+/*Aqui e transição quandopassa o mouse em cima da bolinha */
+.bola:hover {
+    transition: 0.5ms;
+    border: 2px solid #dd5c00;
+}
+
+/*Aqui modifiquei a letra que fica dentro da bolinha do tamanho da camisa*/
+.info_bola {
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    bottom: 5px;
+    left: 9px;
+}
+
+/*Aqui modifiquei a letra que fica dentro da bolinha do tamanho da camisa*/
+.info_bola2 {
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    bottom: 6px;
+    left: 2px;
+}
+
+/*Aqui modifiquei o link para ir p/ o carrinho */
+.saiba2 {
+    display: block;
+    padding: 4px;
+    width: 200px;
+    height: 33px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Aqui modifiquei o link para ir p/ o carrinho */
+.indo_carro {
+    display: flex;
+    justify-content: end;
+    margin: 50px;
+}
+
+/*Aqui eu deixei o site responsivo*/
+.respon {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Aqui eu deixei o site responsivo*/
+.dado_pai {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Deixei um espaço entre aas informações*/
+.dado_pai ul {
+    margin-top: 12px;
+}
+
+/*Deixei um espaço entre as informações e coloquei um tamanho de letra*/
+.dado_pai li {
+    list-style: none;
+    font-size: 13px;
+    margin: 5px;
+}
+
+/*Troquei a cor das palavras*/
+.dado_pai ul strong {
+    color: rgb(134, 130, 130);
+}
+
+/*Coloquei uma distancia do topo*/
+.historia {
+    margin-top: 75px;
+}
+
+/*Alterei o tamanho da letra*/
+#hist {
+    font-size: 13px;
+}
+
+/*Coloquei uma distancia do topo*/
+.historia p {
+    margin-top: 7px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação do site formulario*/
+
+/*Coloquei os items no centro com um tamanho definido*/
+.inteiro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/*Coloquei uma altura e largura com uma borda */
+.container_formulario {
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    border: solid 1px black;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/*Coloquei uma cor de letra alterei o tamanho da letra e fiz ela ficar no centro*/
+.container_formulario h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+/*Coloquei uma distancia do topo*/
+.container_formulario .form {
+    margin-top: 30px;
+}
+
+/*Coloquei uma distancia do topo e uma largura*/
+.form .input_box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Mudei a cor das palavras*/
+.input_box label {
+    color: #333;
+}
+
+/*Coloquei uma altura e largura com uma borda brnaca e uma distancia do topo*/
+.form :where(.input_box input, .selecao) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+/*Coloquei uma distancia entre as colunas*/
+.form .coluninha {
+    display: flex;
+    column-gap: 20px;
+}
+
+/*Coloquei os items no centro e uma distancia entre as colunas */
+.form :where(.opcoes_genero, .generos) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+/*Coloquei uma distancia entre as colunas*/
+.form .generos {
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+/*Quando passa o mouse em cima fica um dedinho*/
+.form :where(.generos input, .generos label) {
+    cursor: pointer;
+}
+
+/*Coloquei uma cor diferente naas palavras com uma distancia do topo e um tamanho de letra*/
+.box_genero h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*Coloquei uma distancia do topo*/
+.endereco :where(input, .opcoes_genero label) {
+    margin-top: 15px;
+}
+
+/*Coloquei uma altura e largura com uma cor de letra e um tamnho de letra*/
+.selecao select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #707070;
+    background-color: white;
+}
+
+/*Coloquei a cor das bolinhas de laranja*/
+.generos input {
+    accent-color: #dd5c00;
+}
+
+/*Coloquei uma cor de fundo com uma altura e largura definida alterei a cor das palavras*/
+form input[type="submit"] {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background-color: #dd5c00;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/*Coloquei um espaço maior entre as letras*/
+form input[type="submit"]:hover {
+    letter-spacing: 0.9px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Formatação do site Carrinho*/
+
+/*Coloquei a quebra de linha*/
+.pacoca {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Coloquei uma altura e largura junto com uma distancia dos elementos*/
+.tudinho {
+    width: 90vh;
+    height: 260px;
+    padding: 10px;
+}
+
+/*Coloquei um tamanho especifico com uma borda*/
+.tudinho img {
+    width: 125px;
+    height: 125px;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/*Coloquei uma transição e a quebra de linha*/
+.tudinho i {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    transition: 15ms;
+}
+
+/*Alterei a cor das palavras*/
+.tudinho i:hover {
+    color: red;
+}
+
+/*Coloquei um tamanho de letra especifico e uma distancia dos outros elementos*/
+.nomao {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 4px;
+}
+
+/*Coloquei um tamanho de letra especifico e uma distancia dos outros elementos*/
+#nomezinho {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+/*Coloquei um tamanho de letra especifico e uma distancia dos outros elementos e mudei a cor das palavras*/
+.titulo_carro h3 {
+    font-size: 21px;
+    padding: 20px;
+    color: #333;
+}
+
+/*Coloquei uma distancia do topo e coloquei uma distancia dos outros elementos*/
+.info_carrao {
+    margin-top: 10%;
+    padding: 0 25px;
+}
+
+/*Coloquei um tamanho de letra especifico e uma distancia de letra*/
+.info_carrao p {
+    margin: 15px;
+    letter-spacing: 0.7;
+    font-size: 16px;
+}
+
+/*Coloquei uma distancia dos outros elementos e um tamanho de letra especifico*/
+.info_carrao span {
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+/*Coloquei o botao no centro com uma distancia dos outros elementos junto com uma cor arredondando sua borda e tirando o sublinado que fica quando e um link */
+.saiba3 {
+    display: block;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/*Coloquei uma distancia entre as letras*/
+.saiba3:hover {
+    letter-spacing: 0.9px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Media scren (820 pixels)*/
+
+
+@media only screen and (max-width: 820px) {
+
+    /*Alterei o grid da loja principal*/
+    body {
+        grid-template-areas:
+            "cabe"
+            "ombr"
+            "corp"
+            "fund";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .cabeca {
+        height: 210px;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    .volta {
+        display: none;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    .logo {
+        display: none;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    #tchau_carro {
+        display: none;
+    }
+
+    /*Coloquei o elemento como um bloco*/
+    .loja2 {
+        display: block;
+    }
+
+    /*Alterei o grid da loja principal*/
+    .produto {
+        grid-template-areas:
+            "pro1"
+            "pro2"
+            "pro3"
+            "pro4";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    /*Coloquei uma altura maior do elemento*/
+    .produtao img {
+        width: 50%;
+    }
+
+    /*Coloquei um tamanho de letra especifico*/
+    #hist {
+        font-size: 12px;
+    }
+
+    /*Coloquei o footer para ficar em 2 colunas e uma distancia entre eles*/
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .produto-1 {
+        width: 100%;
+        height: 240px;
+    }
+
+    /*Alterei o grid da loja principal*/
+    .formulario {
+        grid-template-areas:
+            "prim"
+            "segu"
+            "terc";
+        grid-template-rows: auto 900px auto;
+        grid-template-columns: auto;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .primeiro {
+        height: 240px;
+    }
+
+    /*Alterei o grid da loja principal*/
+    .carro {
+        display: grid;
+        grid-template-areas:
+            "car1"
+            "car2"
+            "car3"
+            "car4 ";
+        grid-template-columns: auto;
+        grid-template-rows: auto 300px auto auto;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .carro1 {
+        height: 240px;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    .tudinho i {
+        display: none;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Media scren (480 pixels)*/
+
+
+@media only screen and (max-width: 480px) {
+
+    /*Alterei o grid da loja principal*/
+    .body {
+        grid-template-areas:
+            "cabe"
+            "prin"
+            "fund";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    .ombro {
+        display: none;
+    }
+
+    /*Coloquei o elemento como um bloco*/
+    .loja2 {
+        display: block;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .cabeca {
+        height: 225px;
+    }
+
+    /*Eu coloquei para que ele não apareça no site*/
+    #tchau_carro {
+        display: none;
+    }
+
+    /*Alterei o grid da loja principal*/
+    .produto {
+        grid-template-areas:
+            "pro1"
+            "pro2"
+            "pro3"
+            "pro4";
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+    }
+
+    /*Coloquei uma altura e largura do elemento*/
+    .produtao img {
+        width: 130px;
+        height: 130px;
+        left: 10px;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .produto-1 {
+        height: 228px;
+    }
+
+    /*Coloquei o elemento mais para a esquerda*/
+    .informacoes_preco {
+        left: 122px;
+    }
+
+    /*Coloquei o footer para ficar em 1 colunas e uma distancia entre eles*/
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    /*Coloquei o menu para aparecer no site*/
+    .tres_ponto {
+        display: flex;
+    }
+
+    /*Alterei o grid da loja principal*/
+    .formulario {
+        grid-template-areas:
+            "prim"
+            "segu"
+            "terc";
+        grid-template-rows: auto 1130px auto;
+        grid-template-columns: auto;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .primeiro {
+        height: 225px;
+    }
+
+    /*Coloquei a quebra de linha*/
+    .form .coluninha {
+        flex-wrap: wrap;
+    }
+
+    /*Coloquei uma distancia das linhas*/
+    .form :where(.opcoes_genero, .generos) {
+        row-gap: 15px;
+    }
+
+    /*Coloquei uma largura maior no header*/
+    .carro1 {
+        height: 225px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*Modificações imagem*/
+
+/*Modifiquei o tamanho da logo*/
+.logo {
+    width: 277px;
+    left: 234px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+/*Coloquei uma altura e largura */
+.image_fundo img {
+    width: 35px;
+    height: 35px;
+}
+
+/*Coloquei uma altura e largura e uma distancia de outros elementos */
+.image_produto {
+    width: 135px;
+    height: 135px;
+    margin: 15px;
+}
+
+/*Coloquei o elemento como um bloco e uma altura e largura dando posições a esse elemento*/
+.carrinho {
+    display: block;
+    width: 66px;
+    height: 66px;
+    bottom: 25px;
+    position: absolute;
+    right: 150px;
+    bottom: -8px;
+}
+
+/*Coloquei uma distancia dos outros elementos*/
+.roi {
+    margin: 5px;
+}
+
+/*Coloquei uma altura e largura e uma distancia de outros elementos */
+.info img {
+    width: 95px;
+    height: 20px;
+    margin: 5px;
+}
+
+/*Coloquei uma altura e largura */
+.okk i {
+    width: 33px;
+    height: 44px;
+}

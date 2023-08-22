@@ -1,0 +1,209 @@
+<!--Identifica o HTML5-->
+<!DOCTYPE html>
+<!--colocamos nossa pagina em portugues Brasil-->
+<html lang="pt-br">
+
+<head>
+    <!--Nos permite usar caracteres especiais-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--Nome da aba do browser-->
+    <title>Levitate Sports</title>
+    <!--Imagem do brasão pequenininho na aba-->
+    <link rel="shortcut icon" href="Img/levitate-logo.png">
+    <!--identifica as imagens em codigo-->
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="carro">
+    <!--Cabeçalho onde ficará a imagem-->
+    <header class="carro1">
+        <!--Imagem que ficará no canto do header e utilizando o class para modifica-lo no CSS-->
+        <a href="loja.html"><img src="img/logo.png" class="logo" alt="Logo tipo"></a>
+        <!--Aqui vai conter o menuzinho que fica quando estamos na tela de celular e tablet-->
+        <section class="loja2">
+            <!--Aqui e aonde vai ficar as informaçoes do menu-->
+            <div class="nav_mobile">
+                <!--Aqui e aonde coloquei ele como um checkbox para quando clicar nele ele abrir e fechar-->
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Aqui e a imagem do menu-->
+                    <img src="img/menu.jpg" alt="">
+                </label>
+                <!--Aqui e aonde vai ter as informaçoes que estarao dentro do menu-->
+                <nav class="menu">
+                    <ul>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="formulario.html">Cadastro</a></li>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="produto.html">Produtos</a></li>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!--Aqui chamei um class para colocar o grid no aside-->
+    <aside class="carro2">
+        <!--Aqui vai ter todas as informações do carrinho-->
+        <section class="pacoca">
+            <!--Aqui vai ter o titulo do carrinho-->
+            <div class="titulo_carro">
+                <!--Aqui e o titulo-->
+                <h3>Meu Carrinho</h3>
+            </div>
+            <!--Aqui vai ter todas as informações do carrinho -->
+            <div class="tudinho">
+                <!--Icone de uma lixeira-->
+                <i class="fa fa-solid fa-trash"></i>
+                <!--Nome do produto com um tom mais forte-->
+                <p id="nomezinho"><strong>Camisa Corinthians II 23/24 s/n° Torcedor Nike Masculina</strong></p>
+                <!--Informações do produto-->
+                <p>Vendido e entregue por Levitate</p>
+                <!--Informações do produto-->
+                <p class="nomao"><strong>Tamanho:</strong> M</p>
+                <!--Informações do produto-->
+                <p class="nomao"><strong>Cor:</strong> Preto+Branco</p>
+                <!--Imagem do Produto-->
+                <img src="img/camisa_fut2.png" alt="">
+            </div>
+        </section>
+    </aside>
+
+    <!--Aqui chamei um class para colocar o grid no aside-->
+    <main class="carro3">
+        <!--Aqui vai ter todas as informações do carrinho -->
+        <section class="to_sem_carro">
+            <!--Aqui tem as informações do carrinho-->
+            <div class="info_carrao">
+                <!--Informação do produto-->
+                <p><strong>Você Adicionou 1 item ao seu Carrinho</strong></p>
+                <!--Informação do produto-->
+                <p>Este item pode demorar de 1 a 2 semansa para ser entregue caso não seja entregue entre em contato
+                    conosco</p>
+                <!--Informação do produto-->
+                <p>O total de sua compra foi de:</p>
+                <!--Preço do Produto-->
+                <span>R$ 299,90</span>
+                <!--Botao de Continuar-->
+                <a href="loja.html" class="saiba3">Finalizar Compra</a>
+        </section>
+    </main>
+    <!--Coloquei um class de carro4 para chamar no css  -->
+    <!--Aqui começa o footer-->
+    <footer class="carro4">
+        <!--Aqui e aonde vai ficar as informaçores do footer-->
+        <div id="footer_content">
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Ajuda e Suporte</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Pagamentos</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Trocas e Devoluções</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Entregas</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Minha Conta</a>
+                </li>
+            </ul>
+
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Institucional</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Sobre Levitate</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Politica de Privacidade</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Regulamentos</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Política de Cookies</a>
+                </li>
+            </ul>
+
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Fale Conosco</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Acompanhe seu Pedido</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Televenda (00) 9984 0099</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Atendimento</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Enviar um E-mail</a>
+                </li>
+            </ul>
+            <!--Aqui e aonde vai as rede sociais-->
+            <div id="titulo_fundo">
+                <!--Titulo Principal-->
+                <h1>Redes sociais</h1>
+                <!--Subtitulo-->
+                <p>Formas de contato</p>
+                <!--Aqui coloquei as redes sociais-->
+                <div id="rede_social">
+                    <a href="#">
+                        <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                        <img src="img/rede5.png" class="bbbb" alt="">
+                    </a>
+
+                    <a href="#" class="fundinho">
+                        <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                        <img src="img/rede6.png" alt="">
+                    </a>
+
+                    <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                    <a href="#" class="fundinho">
+                        <img src="img/rede4.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!--Aqui e aonde esta o copyright e coloquei um id para modificalo no css-->
+        <div id="copy">
+            &#169
+            Copyright © 2021 - 2023 www.Levitate.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo
+            do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto
+            imagem, layout, trade dress, aqui veiculados são de propriedade exclusiva da LEVI.COM
+            Internet L.C.
+        </div>
+    </footer>
+</body>
+
+</html>

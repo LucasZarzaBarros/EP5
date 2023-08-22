@@ -1,0 +1,295 @@
+<!--Identifica o HTML5-->
+<!DOCTYPE html>
+<!--colocamos nossa pagina em portugues Brasil-->
+<html lang="pt-br">
+
+<head>
+    <!--Nos permite usar caracteres especiais-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
+    <link rel="stylesheet" href="style.css">
+    <!--Nome da aba do browser-->
+    <title>Levitate Sports</title>
+    <!--Imagem do brasão pequenininho na aba-->
+    <link rel="shortcut icon" href="Img/levitate-logo.png">
+    <!--identifica as imagens em codigo-->
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="formulario">
+    <!--Cabeçalho onde ficará a imagem-->
+    <header class="primeiro">
+        <!--Imagem que ficará no canto do header e utilizando o class para modifica-lo no CSS-->
+        <a href="loja.html"><img src="img/logo.png" class="logo" alt="Logo tipo"></a>
+        <!--Aqui vai conter o menuzinho que fica quando estamos na tela de celular e tablet-->
+        <section class="loja2">
+            <!--Aqui e aonde vai ficar as informaçoes do menu-->
+            <div class="nav_mobile">
+                <!--Aqui e aonde coloquei ele como um checkbox para quando clicar nele ele abrir e fechar-->
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Aqui e a imagem do menu-->
+                    <img src="img/menu.jpg" alt="">
+                </label>
+                <!--Aqui e aonde vai ter as informaçoes que estarao dentro do menu-->
+                <nav class="menu">
+                    <ul>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="loja.html">Voltar</a></li>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="produto.html">Produtos</a></li>
+                        <!--Aqui sao as informaçoes do menu-->
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!--Aqui coloquei um class no main para chamar ele no css e colocar o grid-->
+    <main class="segundo">
+        <!--Aqui vai ficar todas as informações do formlario-->
+        <div class="inteiro">
+            <!--Aqui contem informações od formulario-->
+            <section class="container_formulario">
+                <!--Aqui e o titulo-->
+                <h4>Cadastre-se</h4>
+                <!--Aqui e o formulario e qual protocolo-->
+                <form action="#" method="post" class="form">
+                    <!--Contem informações do formulario-->
+                    <div class="input_box">
+                        <!--Aqui e o titulo da pergunta-->
+                        <label for="#">Nome Completo</label>
+                        <!--Aqui e aonde escreve que e do tipo texto-->
+                        <input type="text" name="texto" id="texto" placeholder="Nome Completo" required>
+                    </div>
+
+                    <!--Contem informações do formulario-->
+                    <div class="input_box">
+                        <!--Aqui e o titulo da pergunta-->
+                        <label for="#">Insira seu E-mail</label>
+                        <!--Aqui e aonde escreve que e do tipo texto-->
+                        <input type="text" name="texto" id="texto" placeholder="Insira seu E-mail" required>
+                    </div>
+
+                    <!--Contem informações do formulario-->
+                    <div class="input_box">
+                        <!--Aqui e o titulo da pergunta-->
+                        <label for="#">Insira seu Senha</label>
+                        <!--Aqui e aonde escreve que e do tipo texto-->
+                        <input type="password" name="senha" id="senha" placeholder="Insira sua Senha" required>
+                    </div>
+                    <!--Aqui vai ser aonde vou colocar eles em colunas de 2 em 2-->
+                    <div class="coluninha">
+                        <!--Contem informações do formulario-->
+                        <div class="input_box">
+                            <!--Aqui e o titulo da pergunta-->
+                            <label for="#">Telefone</label>
+                            <!--Aqui e aonde escreve que e do tipo texto-->
+                            <input type="number" name="numero" id="numero" placeholder="Numero de Celular" required>
+                        </div>
+
+                        <!--Contem informações do formulario-->
+                        <div class="input_box">
+                            <!--Aqui e o titulo da pergunta-->
+                            <label for="#">Data de Nascimento</label>
+                            <!--Aqui e aonde escreve que e do tipo data-->
+                            <input type="date" name="data" id="data" required>
+                        </div>
+                    </div>
+
+                    <!--Aqui e aonde vai ter todos os generos-->
+                    <div class="box_genero">
+                        <!--Aqui contem o titulo-->
+                        <h3>Genero</h3>
+                        <!--Contem informações dos generos-->
+                        <div class="opcoes_genero">
+                            <!--Aqui vai ser os generos-->
+                            <div class="generos">
+                                <!--Aqui e as bolinhas-->
+                                <input type="radio" name="genero" id="genero">
+                                <!--Titulo das bolinhas-->
+                                <label for="genero">Masculino</label>
+                            </div>
+
+                            <!--Aqui vai ser os generos-->
+                            <div class="generos">
+                                <!--Aqui e as bolinhas-->
+                                <input type="radio" name="genero" id="genero2">
+                                <!--Titulo das bolinhas-->
+                                <label for="genero2">Feminino</label>
+                            </div>
+
+                            <!--Aqui vai ser os generos-->
+                            <div class="generos">
+                                <!--Aqui e as bolinhas-->
+                                <input type="radio" name="genero" id="genero4">
+                                <!--Titulo das bolinhas-->
+                                <label for="genero4">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Aqui vai ficar as informações do endereço-->
+                    <div class="input_box endereco">
+                        <!--Aqui contem o Titulo-->
+                        <label for="#">Endereço</label>
+                        <!--Aqui e aonde escreve que e do tipo texto-->
+                        <input type="text" name="endereco" id="endereco" placeholder="Nome da Rua" required>
+                        <!--Aqui vai conter os países-->
+                        <div class="selecao">
+                            <!--Aqui ficas as opçõers dos países-->
+                            <select>
+                                <!--Nome do país-->
+                                <option value="#">País</option>
+                                <!--Nome do país-->
+                                <option value="#">Brasil</option>
+                                <!--Nome do país-->
+                                <option value="#">Inglaterra</option>
+                                <!--Nome do país-->
+                                <option value="#">Argentina</option>
+                                <!--Nome do país-->
+                                <option value="#">Estados Unidos</option>
+                                <!--Nome do país-->
+                                <option value="#">Cuba</option>
+                            </select>
+                        </div>
+
+                        <!--Aqui vai ser aonde vou colocar eles em colunas de 2 em 2-->
+                        <div class="coluninha">
+                            <!--Aqui e aonde escreve que e do tipo texto-->
+                            <input type="text" name="regiao" id="regiao" placeholder="Insira sua Região" required>
+                            <!--Aqui e aonde escreve que e do tipo numero-->
+                            <input type="number" name="casa" id="casa" placeholder="Numero da Casa" required>
+                        </div>
+
+                        <!--Aqui vai ser aonde vou colocar eles em colunas de 2 em 2-->
+                        <div class="coluninha">
+                            <!--Aqui e aonde escreve que e do tipo numero-->
+                            <input type="number" name="codigo" id="codigo" placeholder="Insira o codigo Postal"
+                                required>
+                            <!--Aqui e aonde escreve que e do tipo texto-->
+                            <input type="text" name="cidade" id="cidade" placeholder="Nome da sua Cidade">
+                        </div>
+                    </div>
+                    <!--Botao de Continuar-->
+                    <a href="loja.html"><input type="submit" value="Continue"></a>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!--Coloquei um class para colocar o grid no footer-->
+    <footer class="terceiro">
+        <!--Aqui e aonde vai ficar as informaçores do footer-->
+        <div id="footer_content">
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Ajuda e Suporte</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Pagamentos</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Trocas e Devoluções</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Entregas</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Minha Conta</a>
+                </li>
+            </ul>
+
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Institucional</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Sobre Levitate</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Politica de Privacidade</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Regulamentos</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Política de Cookies</a>
+                </li>
+            </ul>
+
+            <!--Lista das informaçoes-->
+            <ul class="lista_fundo">
+                <li>
+                    <!--Titulo Principal-->
+                    <h3>Fale Conosco</h3>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Acompanhe seu Pedido</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Televenda (00) 9984 0099</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Atendimento</a>
+                </li>
+                <li>
+                    <!--Aqui e as informaçoes usei um class para modificar no css-->
+                    <a href="#" class="fundinho">Enviar um E-mail</a>
+                </li>
+            </ul>
+            <!--Aqui e aonde vai as rede sociais-->
+            <div id="titulo_fundo">
+                <!--Titulo Principal-->
+                <h1>Redes sociais</h1>
+                <!--Subtitulo-->
+                <p>Formas de contato</p>
+                <!--Aqui coloquei as redes sociais-->
+                <div id="rede_social">
+                    <a href="#">
+                        <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                        <img src="img/rede5.png" class="bbbb" alt="">
+                    </a>
+
+                    <a href="#" class="fundinho">
+                        <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                        <img src="img/rede6.png" alt="">
+                    </a>
+
+                    <!--Aqui e as redes sociais e usei um class para modificar no css-->
+                    <a href="#" class="fundinho">
+                        <img src="img/rede4.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!--Aqui e aonde esta o copyright e coloquei um id para modificalo no css-->
+        <div id="copy">
+            &#169
+            Copyright © 2021 - 2023 www.Levitate.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo
+            do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto
+            imagem, layout, trade dress, aqui veiculados são de propriedade exclusiva da LEVI.COM
+            Internet L.C.
+        </div>
+    </footer>
+    <!--Fim do footer-->
+</body>
+
+</html>
